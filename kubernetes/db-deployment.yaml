@@ -23,6 +23,6 @@ spec:
         - secretRef:
             name: db-secret
         name: db-deployment
-        image: docker pull registry.dev.afsmtddso.com/aishaabdelkader-harbor-project/db:a305471-a305471
+        image: registry.dev.afsmtddso.com/aishaabdelkader-harbor-project/db:a305471-a305471
         ports:
         - containerPort: 5432

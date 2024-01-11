@@ -12,17 +12,17 @@ spec:
   minReadySeconds: 20
   selector:
     matchLabels:
-      app: <APP>
+      app: app
   template:
     metadata:
       labels:
-        app: <APP>
+        app: app
     spec:
       containers:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: 
-        image: docker pull registry.dev.afsmtddso.com/aishaabdelkader-harbor-project/lab-env-repo:1.0
+        name: app-deployment
+        image: registry.dev.afsmtddso.com/aishaabdelkader-harbor-project/app:a305471-a305471
         ports:
         - containerPort: 5000
